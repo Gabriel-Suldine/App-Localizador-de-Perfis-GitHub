@@ -1,21 +1,36 @@
 .container{
+ justify-content: center;
  
 }
 
 
 #dados{
-  display: flex;  
-  justify-content: center; 
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
   border-radius: 5px;
+  background-color: blue;
+  padding: 15px;
 }
 
 #dados img {
   border-radius: 50%;
-  width: 160px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
-#dados h1 {
+#dados p {
+color: white;
+font-size: 25px;
+font-weight: 700;
+padding-top:15px ;
 
 
+}
+#dados a{
+  color: white;
+  text-decoration: underline;
+  
+  
 }

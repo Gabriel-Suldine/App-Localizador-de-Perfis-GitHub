@@ -16,9 +16,9 @@ formConsultarConta.addEventListener('submit', event => {
 async function consultarConta(conta) {
   let response = await fetch(`https://api.github.com/users/${conta}`)
   let dadosConta = await response.json()
-  divDados.innerHTML = `
-    <p>Nome: ${dadosConta.name} </p>     
+  divDados.innerHTML = `   
     <img src="${dadosConta.avatar_url}">
+    <p> ${dadosConta.name} </p>     
     <a href="${dadosConta.html_url}"> Perfil no GitHub</a>   
 `
 ativaLoader(false)
@@ -28,7 +28,7 @@ ativaLoader(false)
 function ativaLoader(ativo) {
   if (ativo) {
     btnConsultarConta.setAttribute('aria-busy', 'true')
-    btnConsultarConta.textContent = 'Consultando Conta...'
+    btnConsultarConta.textContent = 'Localizando Peril...'
   }else{
     btnConsultarConta.removeAttribute('aria-busy')
     btnConsultarConta.textContent = 'Consultar'

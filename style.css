@@ -1,4 +1,21 @@
-#dados{
+.container{
+ 
+}
 
+
+#dados{
+  display: flex;  
+  justify-content: center; 
   border-radius: 5px;
+}
+
+#dados img {
+  border-radius: 50%;
+  width: 160px;
+  height: 150px;
+}
+
+#dados h1 {
+
+
 }

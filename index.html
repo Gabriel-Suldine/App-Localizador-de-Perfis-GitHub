@@ -4,14 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Localizador de perfis</title>
   </head>
   <body>
-    <div id="app">
-      
-
-
-    </div>
+    <main class="container">
+      <article>
+        <header>          
+          <h1>Localizador de perfis</h1>
+        </header>
+        <section class="grid">
+          <form id="ConsultarConta">
+            <label for=""> Conta
+              <input placeholder="Digite a conta" name="conta" type="text" >
+            </label>
+            <button id="btnConsultarConta">Consultar</button>
+          </form>
+          <div id="dados"></div>
+  
+        </section>
+  
+      </article>
+  
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -3,7 +3,6 @@ import '@picocss/pico';
 const formConsultarConta = document.querySelector('#consultarConta');
 const inputConta = formConsultarConta.name;
 const divDados = document.querySelector('#dados')
-const btnConsultarConta = document.querySelector('#btnConsultarConta')
 
 formConsultarConta.addEventListener('submit', event => {
   event.preventDefault()  //anula o comportamento padrão de envio do form  

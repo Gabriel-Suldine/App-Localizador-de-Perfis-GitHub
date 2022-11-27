@@ -1,12 +1,6 @@
-.container{
- justify-content: center;
- 
-}
-
-
 #dados{
   display: flex;
-
+  color: white;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
@@ -19,18 +13,13 @@
   width: 120px;
   height: 120px;
 }
-
 #dados p {
 color: white;
 font-size: 25px;
 font-weight: 700;
 padding-top:15px ;
-
-
 }
 #dados a{
   color: white;
-  text-decoration: underline;
-  
-  
+  text-decoration: underline;  
 }

@@ -18,11 +18,14 @@ async function consultarConta(conta) {
   let dadosConta = await response.json()
   divDados.removeAttribute('aria-busy')
   divDados.textContent = ''
-  divDados.innerHTML = `   
+  if (dadosConta.name.value === 'undefined') {
+    divDados.innerHTML = `<a href="#"> Perfil não Lozalicado </a> ` 
+  } else {
+    divDados.innerHTML = `   
     <img src="${dadosConta.avatar_url}">
     <p> ${dadosConta.name} </p>     
     <a href="${dadosConta.html_url}"> Perfil no GitHub</a>   
-`
+`}
 
 }
 
